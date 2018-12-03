@@ -18,8 +18,8 @@ function List() {
             </button>
           </p>
           <ul>
-            {list.state.list.map(number => {
-              return <li>{number}</li>;
+            {list.state.list.map((number, i) => {
+              return <li key={i}>{number}</li>;
             })}
           </ul>
         </>
